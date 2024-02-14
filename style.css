@@ -1,0 +1,161 @@
+*{
+    font-family: sans-serif;
+}
+.weatherAppImg{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    background-color: white;
+    height: 468px;
+    width: 296px;
+    left: 200px; 
+    top: 31vh;
+    align-items: center;
+    z-index: 0;
+    
+
+}
+.gridItem{
+    background-color: rgb(162, 170, 177);
+    height: 60px;
+    width: 60px;
+    margin-left: 17px;
+    border-radius: 10px;
+}
+body{
+    background-image: linear-gradient(to right , rgb(122, 192, 158), rgb(228, 148, 225));
+}
+img{
+    border-radius: 10px;
+    transition-duration: 300ms ;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.app:hover, .weatherAppImg:hover{
+    transform: scale(1.3);
+
+}
+.app:active, .weatherAppImg:active{
+    transform: scale(1);
+}
+
+.calculatorAPP{
+    height: 468px;
+    width: 296px;
+    left: 200px; 
+    top: 31vh;
+    background-color: gray;
+    position: absolute;
+    opacity: 0;
+    transition-duration: 200ms ;
+    visibility: hidden;
+    transform: scale(0.1);
+
+}
+.exit{
+
+    height: 20px;
+    width: 0px;
+    background-color: rgb(64, 64, 64);
+    border-radius: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: rgb(223, 219, 219);
+    max-width: 30px;
+}
+
+
+
+.backCharacter{
+    position: static;
+}
+
+
+
+
+
+.calc{
+    height: 300px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgb(69, 66, 53);
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 30px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    background-color: #ffae00;
+    display: grid;
+    border-bottom: 1px solid #904b4b;
+    border-left: 1px solid#482e2e;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+}
+
+.button {
+    border: 0.5px solid #999;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(85, 85, 255);
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.weatherApp{
+    height: 468px;
+    width: 296px;
+    left: 200px; 
+    top: 200px;
+    background-image: linear-gradient(to right, rgb(142, 198, 255), rgb(0, 119, 255));
+    position: absolute;
+    opacity: 0;
+    transition-duration: 200ms ;
+    visibility: hidden;
+    transform: scale(0.1);
+
+}
+.weatherAppVisible{
+    height: 468px;
+    width: 296px;
+    left: 200px; 
+    top: 31vh;
+    background-image: linear-gradient(to right, rgb(142, 198, 255), rgb(0, 119, 255));
+    position: absolute;
+    opacity: 1;
+    transition-duration: 200ms ;
+    visibility: visible;
+    transform: scale(1);
+}
